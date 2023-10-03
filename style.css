@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:rgb(20, 20, 20);
+}
+.logo{
+    text-shadow: 0px 0px 4px lime;
+}
+.navbar-nav a{
+    color: white;
+    margin-right: 8px;
+    transition: .3s;
+}
+.navbar-nav a:hover{
+    text-shadow: 0px 0px 20px lime;
+    color: white;
+    transition: .3s;
+}
+
+.change{
+    background-color: rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    border-bottom: 1px solid rgb(56, 56, 56);
+    box-shadow: 1px 1px 3px black;
+    transition: all .3s ease;
+}
+.change .navbar-brand{
+    color: white;
+    font-weight: 600;
+}
+.change .navbar-nav .nav-link{
+    color: white;
+}
+#image{
+    width: 100%;
+    background: #000;
+    opacity: 0.8;
+}
+.image{
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.text h2{
+    font-size: 50px;
+    color: whitesmoke;
+}
+.text p{
+    font-size:20px;
+    color: white;
+}
+#about{
+    color: white;
+}
+#about .aboutPic{
+    border: 3px solid gray;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px gray;
+}
+#about .new{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+#about .container h2{
+    font-size:55px;
+    color: white;
+    border: 5px solid black;
+    padding: 20px;
+    font-weight: 900;
+}
+#about .container .new p{
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+#about .btn{
+    margin-top: 5px;
+    transition: .3s ease;
+}
+#about .btn:hover{
+    color: black;
+    box-shadow: 0px 0px 10px gray;
+}
+#about .btn:hover a{
+    color: black;
+}
+#about .btn a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+#services{
+    color: white;
+}
+#services .box1, #services .box2, #services .box3{
+    overflow: hidden;
+    border: 4px solid black;
+    width: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#services .box1::after{
+    position: absolute;
+    content: "Indonesia";
+    top: 50;
+    left: 2%;
+    right: 0%;
+    bottom: 0%;
+    color: rgb(196, 194, 194);
+    font-size: 25px;
+    transition: .3s ease-in-out;
+}
+#services .box2::after{
+    position: absolute;
+    content: "River, Creek";
+    top: 50;
+    left: 2%;
+    right: 0%;
+    bottom: 0%;
+    color: rgb(196, 194, 194);
+    font-size: 25px;
+}
+#services .box3::after{
+    position: absolute;
+    content: "South Side";
+    top: 50;
+    left: 2%;
+    right: 0%;
+    bottom: 0%;
+    color: rgb(196, 194, 194);
+    font-size: 25px;
+}
+#team{
+    color: white;
+}
+#team .teams{
+    max-width: 100%;
+    background-color: azure;
+    margin-top: 20px;
+}
+
+#team .img-fluid{
+    max-width: 100%;   
+}
+#team .icon{
+    margin-top: -20px;
+}
+#team .icon i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+    transition: all .4s ease-in-out;
+}
+#team .icon i:hover{
+    color: gray;
+    transition: all .4s ease-in-out;
+    transform: translateY(-5px);
+}
+#team .text{
+    color: black;
+    padding: 3px 0;
+}
+#contact{
+    color: white;
+}
+#contact .icon{
+    display: flex;
+    flex-direction: row;
+}
+#contact i{
+    color: white;
+}
+#contact .form{
+    padding-top: 20px;
+    border-radius: 20px 10px;
+    box-shadow: 2px 2px 30px gray;
+}
+#contact .form input, #contact .form textarea{
+    border-radius: 5px;
+    border: 2px solid black;
+}
+#footer{
+    background: black;
+    height: auto;
+}
+#footer .icons i{
+    padding: 8px;
+    border: 2px solid rgb(196, 194, 194);
+    color:rgb(68, 199, 85);
+    transition: all 0.3s ease;
+}
+#footer i{
+    color: white;
+}
+#footer .icons .fa-twitter{
+    color: rgb(69, 69, 250);
+}
+#footer .icons .fa-facebook{
+    color: rgb(30, 125, 214);
+}
+#footer .icons .fa-youtube{
+    color: rgb(196, 9, 9);
+}
+#footer .icons .fa-linkedin{
+    color: rgb(0, 110, 255);
+}
+#footer .icons i:hover{
+    background: white;
+    color: black;
+    transition: all 0.5s ease;
+}
+#footer .container .links a{
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+#footer .container h3, #footer .container p{
+    color: thistle;
+}
+#footer .para-last{
+    display: flex;
+    justify-content: space-between;
+}
+#footer .d-flex{
+    display: flex !important;
+    justify-content: space-between;
+}
+@media (max-width: 768px){
+ .image{
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;   
+ }
+ .text h2{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 75%;
+ }
+ .text p{
+    font-size: 12px;
+    text-align: center;
+ }   
+}
